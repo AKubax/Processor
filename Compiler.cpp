@@ -76,7 +76,7 @@ void Compiler::compile(){
             continue;
         }
 
-        #define DEF_CMD(name, num, code)              \
+        #define DEF_CMD(name, num, code, proc_code)              \
         else if(strcmp(cmd, #name) == 0){             \
             fprintf(outFile, "%d ", PROC_ ## name);   \
             code                                      \
